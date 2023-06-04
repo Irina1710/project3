@@ -8,10 +8,5 @@ class Basket:
 
     def __sub__(self, other):
         return Basket(self.goods - other.goods)
-if __name__ == '__main__':
 
-    my_basket = Basket({'coffee', 'banana', 'bred'})
-    to_remove = Basket({'bred'})
 
-    updated_basket = my_basket - to_remove
-    print(updated_basket.goods)
